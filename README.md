@@ -77,3 +77,11 @@ http://127.0.0.1:8000/libros/
 Dentro de tu entorno virtual:
 pip freeze > requirements.txt
 
+👨‍💻 Autor
+
+Christopher Eduardo Valdivia Baca
+📍 Estudiante de Computación e Informática — Cibertec Callao
+🔗 LinkedIn
+📧 eduardovaldivia130@outlook.es
+📱 +51 953 587 619
+
