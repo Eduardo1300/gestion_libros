@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Libros</title>
+</head>
+<body>
+    <h1>Lista de Libros</h1>
+
+    <form method="get" action="{% url 'lista_libros' %}">
+        <input type="text" name="q" placeholder="Buscar por título..." value="{{ query }}">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <ul>
+        {% for libro in libros %}
+            <li>
+                <strong>{{ libro.titulo }}</strong> - {{ libro.autor }} - {{ libro.fecha_publicacion }} - ISBN: {{ libro.isbn }}
+            </li>
+        {% empty %}
+            <li>No se encontraron libros.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
